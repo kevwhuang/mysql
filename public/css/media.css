@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+
+    body {
+        display: none;
+    }
+
+    html {
+        background: black;
+    }
+
+}

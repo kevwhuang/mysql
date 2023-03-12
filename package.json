@@ -1,0 +1,29 @@
+{
+    "name": "mysql",
+    "version": "1.0.0",
+    "description": "",
+    "author": "Kevin Huang",
+    "license": "MIT",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "node src"
+    },
+    "homepage": "https://github.com/kevwhuang/mysql#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kevwhuang/mysql.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kevwhuang/mysql/issues"
+    },
+    "dependencies": {
+        "cors": "*",
+        "dotenv": "*",
+        "express": "*",
+        "mysql": "*"
+    },
+    "devDependencies": {
+        "eslint-config-airbnb-base": "*",
+        "nodemon": "*"
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+
+<head>
+
+    <title>MySQL Express Server</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kevin Huang">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/utilities.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/styles.js" defer></script>
+    <script src="js/buttons.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
+
+</head>
+
+<body>
+
+    <section>
+
+        <div class="header-group">
+            <h2>ROUTES</h2>
+            <button onclick="toggleRoutes()">view</button>
+        </div>
+
+        <table class="">
+            <tbody>
+                <tr>
+                    <th>GET</th>
+                    <td>/users</td>
+                </tr>
+
+                <tr>
+                    <th>GET</th>
+                    <td>/users/1</td>
+                </tr>
+
+                <tr>
+                    <th>POST</th>
+                    <td>/users</td>
+                </tr>
+
+                <tr>
+                    <th>PUT</th>
+                    <td>/users/1</td>
+                </tr>
+
+                <tr>
+                    <th>DELETE</th>
+                    <td>/users</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <section>
+
+        <div class="header-group">
+            <h2>USERS</h2>
+            <button onclick="toggleUsers()">view</button>
+        </div>
+
+        <div id="listUsers" class="">
+            <form id="formUsers" action="" target="_self" method="post" enctype="application/x-www-form-urlencoded">
+                <input type="submit" value="POST">
+
+                <label for="usersFirstName">First name:</label>
+                <input id="usersFirstName" type="text" name="first_name" required>
+
+                <label for="usersLastName">Last name:</label>
+                <input id="usersLastName" type="text" name="last_name" required>
+
+                <label for="usersPhone1">Phone 1:</label>
+                <input id="usersPhone1" type="text" name="phone1" placeholder="#" pattern="[0-9]*">
+
+                <label for="usersPhone2">Phone 2:</label>
+                <input id="usersPhone2" type="text" name="phone2" placeholder="#" pattern="[0-9]*">
+
+                <label for="usersEmail">Email:</label>
+                <input id="usersEmail" type="text" name="email">
+
+                <label for="usersAddress">Address:</label>
+                <input id="usersAddress" type="text" name="address">
+
+                <label for="usersCity">City:</label>
+                <input id="usersCity" type="text" name="city">
+
+                <label for="usersCounty">County:</label>
+                <input id="usersCounty" type="text" name="county">
+
+                <label for="usersState">State:</label>
+                <input id="usersState" type="text" name="state">
+
+                <label for="usersZip">ZIP:</label>
+                <input id="usersZip" type="text" name="zip" placeholder="#" pattern="[0-9]*">
+            </form>
+
+            <div id="displayUsers"></div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
